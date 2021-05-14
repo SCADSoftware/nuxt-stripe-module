@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-stripe-module",
+  "version": "3.2.0",
+  "description": "NuxtJS module for Stripe.js",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "WilliamDASILVA <william.da.silva@outlook.com>"
+    }
+  ],
+  "main": "lib/module.js",
+  "repository": "https://github.com/WilliamDASILVA/nuxt-stripe-module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt test/fixture",
+    "lint": "eslint lib test",
+    "test": "npm run lint && jest"
+  },
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
+  "files": [
+    "lib",
+    "types/*.d.ts"
+  ],
+  "types": "./types/index.d.ts",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "jest": "latest",
+    "nuxt": "latest"
+  }
+}
